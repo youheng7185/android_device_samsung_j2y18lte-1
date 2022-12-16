@@ -21,7 +21,7 @@ OVERLAY_DEVICE := j2y18lte
 TARGET_DEVICE_LEGACY_KM := true
 
 # XXX I have ss device, but may be edited for other builders.
-TARGET_DEVICE_SIM_COUNT := 1
+TARGET_DEVICE_SIM_COUNT := 2
 
 # Inherit from msm8917-common
 $(call inherit-product, device/samsung/msm8917-common/msm8917.mk)
