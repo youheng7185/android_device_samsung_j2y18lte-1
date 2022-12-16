@@ -19,6 +19,12 @@ TARGET_KERNEL_CONFIG := j2y18lte_defconfig
 # Filesystem
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3514826752
 
+# Shim
+TARGET_LD_SHIM_LIBS := \
+    /system/vendor/lib/libsec-ril.so|libshims_ril.so \
+    /system/vendor/lib/libsec-ril-dsds.so|libshims_ril.so \
+    /system/vendor/lib/libsensorndkbridge.so|libbase_shim.so
+    
 # Inherit from common msm8917-common
 -include device/samsung/msm8917-common/BoardConfigCommon.mk
 
